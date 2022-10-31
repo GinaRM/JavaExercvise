@@ -34,6 +34,7 @@ showResults();
 
 
 I didn't use any specific architecture for this exercise because I wanted to keep it as simple as possible, but it could use some polish.
+Finally, to run this code, simply click on the "Main" class and select "Run".
 
 
 
