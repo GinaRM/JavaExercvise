@@ -37,9 +37,9 @@ public class Main {
         int coincidences = 0;
         for (int i = 0; i < employeeName.size(); i++) {
             for (int j = i + 1; j < employeeName.size(); j++) {
-                String horarios[] = schedule.get(i).split(",");
-                for (int k = 0; k < horarios.length; k++) {
-                    if (schedule.get(j).contains(horarios[k])) {
+                String schedules[] = schedule.get(i).split(",");
+                for (int k = 0; k < schedules.length; k++) {
+                    if (schedule.get(j).contains(schedules[k])) {
                         coincidences++;
                        
                     }
@@ -53,12 +53,12 @@ public class Main {
     static ArrayList<String> readFile() {
         ArrayList<String> listEmployees = new ArrayList();
         try {
-            // Apertura del fichero
+
             File file = new File("log/example1.txt");
             FileReader fr = new FileReader(file);
-            // Creacion de BufferedReader para poderhacer una lectura (disponer del metodo readLine()).
+
             BufferedReader br = new BufferedReader(fr);
-            // Lectura del fichero
+
             String line;
             while ((line = br.readLine()) != null) {
 
